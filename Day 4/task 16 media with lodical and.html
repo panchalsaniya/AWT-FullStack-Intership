@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media </title>
+    <style>
+        body
+        {
+            background-color: wheat;
+            color: brown;
+        }
+        /* On screen that are 992px wide or less, the background color is blue*/
+        @media screen and (max-width:992px)
+        {body
+            {
+                background-color: blue;
+                color: white;
+            }
+        }
+        /* On screen that are 600px wide or less, the background color is rosybrown*/
+        @media screen and (max-width:600px)
+        {body
+            {
+                background-color: rosybrown;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contanier" style="height: 100px; width:100px;">
+        <div class="row">saniya</div>
+    </div>
+</body>
+</html>

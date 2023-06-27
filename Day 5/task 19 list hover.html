@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List-hover</title>
+    <style>
+        body ul li ul li{display:none;}
+        body ul li:hover ul li{display:block;}
+        body ul li:hover ul li ul li{display:none;}
+        body ul li ul li:hover ul li{display:block;}
+        body ul li ul li:hover ul li ul li{display:none;}
+        body ul li ul li ul li:hover ul li{display:block;}
+        
+        </style>
+</head>
+<body bgcolor="lightblue">
+        <ul>
+            <li>Google
+                <ul>
+                    <li>Gmail
+                        <ul>
+                            <li>SignUp</li>
+                            <li>SignIn
+                                <ul>
+                                    <li>SignInwithAdmin</li>
+                                    <li>SignInwithMember</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <ul>
+            <li>Youtube
+                <ul>
+                    <li>Video
+                        <ul>
+                            <li>Watch</li>
+                            <li>Download</li>
+                        </ul>    
+                    </li>
+                    <li>Shorts
+                        <ul>
+                            <li>Like</li>
+                            <li>Share</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <ul>
+            <li>Amazon
+                <ul>
+                    <li>order
+                        <ul>
+                            <li>Payment cash</li>
+                            <li>Payment online
+                                <ul>
+                                    <li>UPI</li>
+                                    <li>Amazon pay</li>
+                                </ul>
+                            </li>
+                        </ul>    
+                    </li>
+                    <li>Refund
+                        <ul>
+                            <li>by exchange item</li>
+                            <li>cash</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>   
+</body>
+</html>

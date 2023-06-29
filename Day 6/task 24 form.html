@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    
+    <style>
+        body
+        {
+            background-image: url(/images/sunrise\ image.jpg);
+            background-size: cover;
+            max-height: 100%;
+            max-width : 100%;
+            height: 100%;
+            width:100%;
+            position: fixed;
+        }
+        .div1{
+            background-color: rgb(153, 239, 235);
+            border: 2px solid black;
+            margin:auto;
+            padding: 20px;
+            font-size: medium;
+
+        }
+        .contanier{
+            width: 100%;
+            height: 500px;
+            justify-content: center;
+            display: flex;
+            position: fixed;
+        }
+        h1
+        {
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+   <div class="contanier">
+        <div class="div1" style="border-radius: 5%;border-color: solid black;">
+            <h1>Log In</h1><hr style="border-top: 1px solid black;">
+            <i class="fa-solid fa-user"></i>  User name : <input type="text" color:"black"  autofocus placeholder="User Name Here..." maxlength="20" required/><br><br>
+            <i class="fa-solid fa-lock" style="color: black;"></i>  Password : <input type="text" autofocus placeholder="Enter password..." maxlength="20" required/><br><br>
+            Gender : <br>
+            <i class="fa-solid fa-child" style="color: black;"></i> <input type="radio" id="G1" name="Gender"/><label for="G1">Male</label>&nbsp;&nbsp;
+            <i class="fa-sharp fa-solid fa-child-dress" style="color: black;"></i>  <input type="radio" id="G2" name="Gender"/><label for="G1">Female</label><br>
+            <i class="fa-solid fa-calendar-days" style="color: black;"></i>  BOD:  <input type="date"><br><br>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Thank you for visiting</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>By click accept we will agree all the terms and condition.<br>Do you want to log in?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Accept</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

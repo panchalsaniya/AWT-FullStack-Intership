@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        .tooltip 
+        {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted white;
+        }
+            
+        .tooltip .tooltiptext
+        {
+
+            visibility: hidden;
+            width: 120px;
+            background-color: rgb(144, 227, 131);
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+            
+        .tooltip:hover .tooltiptext 
+        {
+          visibility: visible;
+        }
+
+        body
+        {
+            text-align:center;
+            background-image: url(/images/rose.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        h1,h2,div
+        {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            color: burlywood;
+            font: optional;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my first tooltip program</h1>
+    <h2>Basic Tooltip</h2>
+    
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+    </div>
+    
+</body>
+</html>

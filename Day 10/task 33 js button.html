@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js button</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
+    <style>
+        img
+        {
+            width: 100px;
+            height: 100px;
+        }
+        h1
+        {
+            text-align: center;
+            background-color: bisque;
+            color: black;
+            font-size: 40px;
+        }
+        h3
+        {
+            background-color: aquamarine;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript</h1><hr><hr>
+    <h3>Button to change text</h3><hr>
+    <p id="demo">Click button and notice changes</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML='Saniya'">close</button><br><hr>
+
+    <h3>Image change</h3><hr>
+    <p>you can go to sunsrise or sunset</p>
+    <button onclick="document.getElementById('myImage').src='/images/sunrise image.jpg'">sunrise</button>
+    <img id="myImage" src="/images/sunset.jpg">
+    <button onclick="document.getElementById('myImage').src='/images/sunset.jpg'">sunset</button>
+    <br>
+    <hr>
+
+    <h3>large/small/color in text</h3><hr>
+    <p id="size">Can change font size and color</p>
+    <button type="button" onclick="document.getElementById('size').style.fontSize='36px'">large</button>
+    <button type="button" onclick="document.getElementById('size').style.fontSize='12px'">small</button>
+    <button type="button" onclick="document.getElementById('size').style.color='red'" class="text-warning">Red</button>
+    <button type="button" onclick="document.getElementById('size').style.color='green'" class="text-warning">green</button>
+    <br><hr>
+    
+    <h3>Hide paragraph</h3><hr>
+    <p id="hide">password:saniya</p>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">Hide</button>
+    <br><hr>
+
+    <h3>Display paragraph</h3><hr>
+    <p id="dispaly1" style="display:none">You can see it buddy</p>
+    <button type="button" onclick="document.getElementById('dispaly1').style.display='block'">Display</button>
+    <br><hr>
+
+    <h3>Password</h3><hr>
+    <p id="sa" style="display:none">Password:Saniya</p>
+    <button type="button" onclick="document.getElementById('sa').style.display='block'">show</button>
+    <button type="button" onclick="document.getElementById('sa').style.display='none'">close</button><br><hr>
+    
+</body>
+</html>
